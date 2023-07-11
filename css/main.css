@@ -1,0 +1,176 @@
+.contenedor {
+  display: flex;
+}
+
+.rectangulo-verde {
+  background-color: rgb(115, 250, 4);
+  border: 4px solid black;
+  height: 80px;
+}
+
+.rectangulo-rojo {
+  background-color: rgb(250, 53, 4);
+  border: 4px solid black;
+  height: 1040px;
+  margin-top: 10px;
+  width: 20%;
+}
+
+.rectangulo-blanco {
+  background-color: white;
+  border: 4px solid black;
+  height: 540px;
+  margin-top: 10px;
+  flex-grow: 1;
+  position: relative;
+  margin-left: 10px;
+}
+
+.rectangulo-rosa {
+  background-color: rgb(255, 105, 180);
+  border: 4px solid black;
+  height: 80px;
+  width: 98%;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.rectangulo-coral1 {
+  background-color: coral;
+  border: 4px solid black;
+  height: 160px;
+  width: 50%;
+  position: absolute;
+  top: 100px;
+  left: 0%;
+  margin-left: 10px;
+}
+
+.rectangulo-coral2 {
+  background-color: coral;
+  border: 4px solid black;
+  height: 160px;
+  width: 47%;
+  position: absolute;
+  top: 100px;
+  left: 52%;
+}
+
+.rectangulo-verde2 {
+  background-color: rgb(115, 250, 4);
+  border: 4px solid black;
+  height: 35px;
+  margin-top: 10px;
+}
+
+.cuadrados-azules {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 235px;
+  margin-left: 5px;
+}
+
+.cuadrado-azul {
+  background-color: blue;
+  border: 4px solid black;
+  width: 180px;
+  height: 120px;
+  margin: 5px;
+  margin-top: 10px;
+}
+
+/* Estilos para Extra Large (xl) */
+@media (min-width: 1200px) {
+  .rectangulo-blanco {
+    height: 100%; /* Establece la altura para xl */
+  }
+
+  .cuadrados-azules {
+    flex-wrap: wrap;
+    margin-top: 240px;
+    width: 100%;
+  }
+
+  .cuadrado-azul {
+    width:220px;
+    margin: 5px;
+  }
+  .rectangulo-rojo{
+    height:535px;
+  }
+}
+
+/* Estilos para Small (sm) */
+@media (min-width: 576px) and (max-width: 767px) {
+  .rectangulo-blanco {
+    height: 100%; /* Establece la altura para sm */
+  }
+  .rectangulo-rojo {
+    height: 800px;
+  }
+  .cuadrados-azules {
+    flex-wrap: wrap;
+    margin-top: 238px;
+    width: 560px;
+  }
+  .cuadrado-azul {
+    width: 32%;
+    margin: 3px;
+    margin-top: 10px;
+  }
+}
+
+/* Estilos para Medium (md) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .rectangulo-blanco {
+    height: 100%; /* Establece la altura para md */
+  }
+  .rectangulo-rojo {
+    height: 800px;
+  }
+  .cuadrado-azul {
+    width: 430px;
+    margin: 4px;
+  }
+}
+
+/* Estilos para Large (lg) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .rectangulo-blanco {
+    height: 800px; /* Establece la altura para lg */
+  }
+  .rectangulo-rojo {
+    height: 800px;
+  }
+  .cuadrado-azul {
+    width: 25%;
+    margin: 5px;
+  }
+}
+
+/* Estilos para Extra Small (xs) */
+@media (max-width: 575px) {
+  .contenedor {
+    flex-direction: column;
+  }
+  .rectangulo-verde {
+    width: 100%;
+    height: 50px;
+  }
+  .rectangulo-rojo {
+    width: 635px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  .rectangulo-blanco {
+    height: 100%;
+    width: 635px;
+  }
+  .rectangulo-rosa {
+    height: 50px;
+    width: 95%;
+  }
+}
+
